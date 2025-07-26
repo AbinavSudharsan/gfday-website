@@ -78,19 +78,23 @@ body {
 }
 
 .love-letter-section {
-  background: pink;
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: pink; 
+  padding: 2rem;
+  text-align: left;
+  font-family: 'Gamja Flower';
 }
 
-.love-letter-section h2 {
-  color: black;
-  font-family: 'Gamja Flower';
-  position: relative;
-  margin-left: 0;
+.letter-container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #862121; 
+  background: none;
+  box-shadow: none;
+  border: none;
 }
+
 
 @keyframes fadeIn {
   from {

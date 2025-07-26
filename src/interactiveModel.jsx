@@ -18,9 +18,9 @@ function Model() {
 
 export default function ModelViewer() {
   return (
-    <div style={{ height: '400px' }}>
+    <div style={{ height: '200px' }}>
       <Canvas>
-        <ambientLight intensity={1} />
+        <ambientLight intensity={0.5} />
         <directionalLight position={[8, 20, 5]} />
         <Suspense fallback={null}>
           <Model />
