@@ -23,17 +23,7 @@ function App(){
     
     <div className='page'>
       <div className = "video-container">
-        <video className='fade-in-video' autoPlay loop muted playsInline>
-          <source src='/flowerfield animation 2.mp4' type='video/mp4'/>
-        </video>
-
-        <audio autoPlay loop>
-          <source src='/Godspeed audio.mp3' type='audio/mp3'/>
-        </audio>
-      </div>
-
-      <div className='photogrid-header'>
-        <h1>MY AMAZING GIRLFRIEND</h1>
+        <InteractiveModel/>
       </div>
 
       <div className='photo-grid'>
@@ -69,8 +59,6 @@ function App(){
           </p>
         </div>
       </div>
-
-       <InteractiveModel />
       </div>
   );
 }

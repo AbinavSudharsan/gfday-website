@@ -1,4 +1,3 @@
-// ModelViewer.jsx
 import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
@@ -13,19 +12,18 @@ function Model() {
     }
   });
 
-  return <primitive ref={modelRef} object={gltf.scene} scale={1.5} />;
+  return <primitive ref={modelRef} object={gltf.scene} scale={2} />;
 }
 
 export default function ModelViewer() {
   return (
-    <div style={{ height: '200px' }}>
+    <div style={{ height: '700px' }}>
       <Canvas>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={1} />
         <directionalLight position={[8, 20, 5]} />
         <Suspense fallback={null}>
           <Model />
         </Suspense>
-        <OrbitControls enableZoom={true} />
       </Canvas>
     </div>
   );
