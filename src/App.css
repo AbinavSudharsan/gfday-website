@@ -1,0 +1,105 @@
+* {
+  cursor: url('/heart.png'), auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.fade-in-video {
+  opacity: 0;
+  animation: fadeInVideo 2s ease-in forwards;
+}
+
+@keyframes fadeInVideo{
+  to{
+    opacity: 1;
+  }
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: pink;
+}
+
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: white;
+}
+
+.photo-item {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* Keeps all photo blocks the same shape */
+  overflow: hidden;
+  background: #eee;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photogrid-header {
+  text-align: center;
+  color: #BA0032;
+  font-family: 'Dancing script';
+  background-color: #fff0f6; 
+  padding: 30px 20px;
+}
+
+.photogrid-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.love-letter-section {
+  background: pink;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love-letter-section h2 {
+  color: black;
+  font-family: 'Gamja Flower';
+  position: relative;
+  margin-left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
