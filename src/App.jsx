@@ -2,6 +2,7 @@ import './App.css'
 import { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import InteractiveModel from './interactiveModel';
+import ComplimentSection from './compliments';
 
 const photoGallery = [
   {src: 'photo 1.jpg'},
@@ -24,6 +25,7 @@ function App(){
     <div className='page'>
       <div className = "video-container">
         <InteractiveModel/>
+        <h1 className='overlay-text'>HAPPY GIRLFRIENDS DAY ANU KUTII !!</h1>
       </div>
 
       <div className='photo-grid'>
@@ -40,6 +42,8 @@ function App(){
         <div className='photo-item'><img src='/images/photo 16.jpg'/></div>
         <div className='photo-item'><img src='/images/photo 17.jpg'/></div>
       </div>
+
+      <ComplimentSection/>
 
       <div className="love-letter-section">
         <div className="letter-container">
